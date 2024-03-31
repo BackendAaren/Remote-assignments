@@ -1,0 +1,65 @@
+* {
+          box-sizing: border-box;
+          margin:0;
+          padding:0;
+          text-decoration: none;
+}
+header {
+          display: flex;
+          justify-content: space-between;
+          padding:0.5rem 1%;
+          margin:0 auto;
+          background-color:rgb(199, 193, 193);
+}
+.Logo h1{
+         font-size: 1.5rem; 
+}
+.bar {
+          display:flex;
+          font-size:1.25rem;
+          list-style: none;
+          
+}
+.bar li {
+          margin-left:50px;
+          
+}
+.bar a:hover {
+          color:blue;
+}
+.bar a {
+          color:black;
+}
+.Wel-page {
+          text-align: center;
+          height:180px;
+          background-color: rgb(188, 228, 230);
+}
+.Wel-page h1 {
+          font-size:40px;
+          padding-top:4%;
+}
+.Sec-title {
+          text-align: center;
+          margin:30px auto;
+}
+.Sec-title h2 {
+          font-size:30px;
+
+}
+.Butt {
+          text-align:center;
+          margin-top: 10px;
+          
+}
+.Butt button {
+          font-size: 1.2rem;
+          background-color: #0bd;
+          color:#fff;
+          border-radius:5px;
+          padding:10px 10px;
+
+}
+.Butt button:hover{
+          background-color: #0090aa;
+}
