@@ -1,3 +1,4 @@
+//Version 1
 function count(input) {
   let alphnum = {};
   input.forEach(function (alph) {
@@ -10,8 +11,9 @@ function count(input) {
   return alphnum;
 }
 let input1 = ["a", "b", "c", "a", "c", "a", "x"];
-console.log(count(input1));
+console.log(count(input1)); //Should print{ a: 3, b: 1, c: 2, x: 1 }
 
+//Version 2
 function Count(input) {
   var obj = {};
   for (let i = 0; i < input.length; i++) {
@@ -25,4 +27,4 @@ function Count(input) {
   return obj;
 }
 
-console.log(Count(input1));
+console.log(Count(input1)); //Should print { a: 3, b: 1, c: 2, x: 1 }
