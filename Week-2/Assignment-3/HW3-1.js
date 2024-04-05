@@ -15,7 +15,7 @@ console.log(count(input1)); //Should print{ a: 3, b: 1, c: 2, x: 1 }
 
 //Version 2
 function Count(input) {
-  var obj = {};
+  let obj = {};
   for (let i = 0; i < input.length; i++) {
     var str = input[i];
     if (obj[str]) {

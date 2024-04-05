@@ -14,8 +14,9 @@ function binarySearchPosition(arr, target) {
       right = mid - 1; //若target小於mid則right設置為mid-1
     }
   }
-  return mid;
+  return -1;
 }
 //Binary search為一排序好的數列
 console.log(binarySearchPosition([1, 2, 5, 6, 7], 1)); // should print 0
 console.log(binarySearchPosition([1, 2, 5, 6, 7], 6)); // should print 3
+console.log(binarySearchPosition([1, 2, 5, 6, 7], 4)); // should print -1
