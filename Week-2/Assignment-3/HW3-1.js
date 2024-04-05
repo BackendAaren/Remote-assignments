@@ -14,7 +14,7 @@ let input1 = ["a", "b", "c", "a", "c", "a", "x"];
 console.log(count(input1)); //Should print{ a: 3, b: 1, c: 2, x: 1 }
 
 //Version 2
-function Count(input) {
+function count2(input) {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
     var str = input[i];
@@ -27,4 +27,4 @@ function Count(input) {
   return obj;
 }
 
-console.log(Count(input1)); //Should print { a: 3, b: 1, c: 2, x: 1 }
+console.log(count2(input1)); //Should print { a: 3, b: 1, c: 2, x: 1 }
