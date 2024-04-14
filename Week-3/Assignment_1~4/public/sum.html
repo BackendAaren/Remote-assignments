@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function(){
+            if(ajax.readyState===4 && ajax.status===200){
+                document.querySelector('#data').innerHTML= `<h1>The ${ajax.responseText}</h1>`;
+            }
+     }
+    //  ajax.open("GET",'http://localhost:3000/data',true)
+   
+     function sendajax(event){
+        event.preventDefault();
+        const number = document.getElementById("number").value
+        console.log(`send function call ${number}`)
+        ajax.open("GET",`http://localhost:3000/data?number=${number}`, true)
+        ajax.send();
+        document.querySelector('#sum').style.display = 'none';
+     }
+     </script>
+</head>
+    <body> 
+        <form id="sum"  method="GET" >
+            <label >Please enter a positive integer</label>
+            <input type="text" id="number" name="number"> 
+            <input type="submit" value="Submit" onclick="sendajax(event)" >
+        </form>
+        <div id="data" >
+
+        </div> 
+        </form>
+    </body>
+</html>
