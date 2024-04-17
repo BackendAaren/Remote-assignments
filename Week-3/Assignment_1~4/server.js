@@ -3,7 +3,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const path = require("path");
 //Assignment-1
-app.use("/static", express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
